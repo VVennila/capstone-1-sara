@@ -1,0 +1,53 @@
+name: CI/CD Pipeline
+
+# on:
+#   push:
+#     branches:
+#       - dev
+#       - stage
+#       - prod
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run Tests
+      run: npm test
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Deploy to Environment
+      if: github.ref == 'refs/heads/dev'
+      run: |
+        echo "Deploying to Dev"
+        # Deployment logic for dev environment (can use AWS, Heroku, etc.)
+    
+    - name: Deploy to Staging
+      if: github.ref == 'refs/heads/stage'
+      run: |
+        echo "Deploying to Staging"
+        # Deployment logic for staging environment
+
+    - name: Deploy to Production
+      if: github.ref == 'refs/heads/prod'
+      run: |
+        echo "Deploying to Production"
+        # Deployment logic for production environment
