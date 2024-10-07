@@ -1,16 +1,11 @@
 {
-  "name": "cicd-express-app",
+  "name": "capstone-1-sara",
   "version": "1.0.0",
+  "description": "![image](https://github.com/user-attachments/assets/cfa42cfd-e115-4649-bd40-b08577984c74)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "dotenv": "^16.4.5",
-    "express": "^4.21.0"
-  }
+  "license": "ISC"
 }
