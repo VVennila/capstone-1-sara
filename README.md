@@ -1,3 +1,3 @@
 # capstone-1
+![image](https://github.com/user-attachments/assets/520ebfb7-5cc1-4ede-9166-b76fae446e76)
 
-![image](https://github.com/user-attachments/assets/75a7af68-6db9-46d8-aa50-26325777abc3)
