@@ -1,5 +1,5 @@
-# capstone-1
-![image](https://github.com/user-attachments/assets/520ebfb7-5cc1-4ede-9166-b76fae446e76)
+![image](https://github.com/user-attachments/assets/cfa42cfd-e115-4649-bd40-b08577984c74)
+
 
 To execute the project described, I will outline the architecture and a sample application, along with the CI/CD pipeline structure. This will ensure the development-to-production process is automated and efficient, meeting the demands of the team's growth.
 
